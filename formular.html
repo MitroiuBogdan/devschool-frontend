@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<!-- Formular 
+    NUme
+    email
+    phone
+    erb
+    age
+    birth date
+    favorite vegetable
+    favorite fruit
+    favorite color
+    wakeup time
+    submit reset -->
+
+
+<form action="">
+    <h1>Personal Info</h1>
+    <p>Note that optional fields are marked ...</p>
+
+    <p>
+        <label for="User Name">Name</label>
+        <input type="text" placeholder="Nume" required minlength="2" maxlength="255">
+    </p>
+    <p>
+        <label for="Email">Email</label>
+        <input type="email" placeholder="Email" required>
+    </p>
+    <p>
+        <label for="Phone">Phone</label>
+        <input type="tel" placeholder="0000000000" required>
+    </p>
+    <p>
+        <label for="birth">Birth date</label>
+        <input type="date" placeholder="YYYY/MM/DD" required>
+    </p>
+
+    <p>
+        <label for="Website">Web</label>
+        <input type="url" placeholder="http://exemple.com" maxlength="1000">
+        <small>(optional)</small>
+    </p>
+
+    <p>
+        <label for="Age">Age</label>
+        <input type="number" placeholder="age" min="0" max="130">
+        <small>(optional)</small>
+    </p>
+
+    <ul>
+        <li>
+            <p>
+                <label for="Favorite-fruit">Favorite Favorite-fruit
+                    <br>
+                    <input type="text" list="list-fruit" pattern="[Bb]anana|[Aa]pple">
+                    <small>(optional)</small>
+                    <datalist id="list-fruit">
+                        <option>Banana</option>
+                        <option>Apple</option>
+                    </datalist>
+                </label>
+
+            </p>
+        </li>
+        <li>
+            <p>
+                <label for="Favorite-color">Favorite color</label>
+                <input type="color" value="#f6b73c">
+                <small>(optional)</small>
+            </p>
+        </li>
+        <li>
+            <p>
+                <label for="Favorite-vegetable">Favorite Favorite-vegetable
+                    <br>
+                    <!-- <input type="text" placeholder="ex:tomato,carrot, ..."> -->
+                    <select>
+                        <option>Cucumber</option>
+                        <option>Carrot</option>
+                        <option>Broccoli</option>
+                    </select>
+                    <small>(optional)</small>
+                </label>
+            </p>
+        </li>
+
+    </ul>
+
+    <p>
+        <label for="Wakeup time">Wakeup time</label>
+        <input type="time">
+        <small>(optional)</small>
+    </p>
+
+    <div>
+        <label for="gender">Gender</label>
+        <br>
+        <input type="radio" value="male">Male
+        <input type="radio" value="female">Female
+        <input type="radio" value="other">Other
+    </div>
+
+
+    <br>
+    <button type="submit">submit</button>
+    <br>
+    <br>
+    <button type="reset">Reset</button>
+
+
+
+
+
+
+</form>
+
+
+
+<!-- CV IN HTML -->
+
+
+
+</body>
+
+</html>
