@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+<style>
+html{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* 100vh=100% */
+  margin: 0;
+}
+aside{
+  background: deepskyblue;
+}
+footer{
+  background: tomato;
+}
+header{
+  background: gold;
+}
+main {
+  background: lightgreen;
+  display: flex;
+  flex: 1;
+}
+</style>
+
+</head>
+
+<!--
+  //flexboxfroggy
+  Selectors CSS 
+div{}
+
+.cls {}
+
+div .cls{}
+
+
+#id {}
+
+
+#id div .cls{}
+,(sau)
+
+ex #id div , .cls{}
+
+#id >div.cls{} 
+
+//prin atribute
+
+<div class="cls" atr="mar">
+
+div[atr="mar"] { }
+
+div:firstChild {}
+div:nth-child(n){}
+
+div::selected (pseudo-elemente)
+
+/////////////////////// BOX model
+
+border=distanta de la padding catre margini
+
+margin
+border
+---------
+ p   |  p
+p-Content-p
+ p   |  p
+ --------
+ border
+ margin
+
+
+ -->
+
+<body>
+  <header>
+    <h1>The main header</h1>
+    <p>A tagline or subtitle</p>
+
+    <form>
+      <label for="search">Search this website:</label><br>
+      <input id="search" type="search" name="q" placeholder="Find in site" autofocus>
+      <button>GO</button>
+    </form>
+
+  </header>
+
+  <main>
+    <aside>
+      <nav>Navigation Link</nav>
+
+    </aside>
+    <div id="content">
+
+      This is where the main content goes
+    </div>
+
+  </main>
+  <footer>Copyright &copy; 2019 </footer>
+
+</body>
+<!-- 
+JS
+
+let var const
+
+
+
+
+
+ -->
+<script>
+
+  var a=1;
+  let b=2;
+
+  // const=declarare by default
+  //null=object
+
+const obj={
+
+  nume:"Nume",
+  age:20,
+  email:"example@yahoo.com"
+}
+ const arr=['String',10,false];
+ 
+
+
+</script>
+</html>

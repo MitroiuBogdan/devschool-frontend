@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h1>My contact</h1>
+  <ul id="list"></ul>
+
+  <script>
+
+    const contacts = [
+      'Adrian',
+      'Dorian',
+      'Mihai',
+      'Ruxandra',
+      'Paula',
+      'Ana'
+    ];
+
+    const list = document.getElementById('list');
+
+    // for (let i = 0; i < contacts.length; i++) {
+    //   list.innerHTML += '<li>' + contacts[i] + '</li>';
+      // list.insertAdjacentHTML('beforeend','<li>' +contacts[i] +'</li>')
+
+    }
+
+    // contacts.forEach(function (contact){
+    //   list.innerHTML+='<li>' +contacts +'</li>'
+
+    // });
+
+    // contacts.forEach((contact) => { list.innerHTML += `<li>${contact}</li>` });
+      const tags=contacts.map(contact => `<li>${contact}</li>`);
+      list.innerHTML=tags.join('');
+
+  </script>
+
+
+
+</body>
+
+</html>
