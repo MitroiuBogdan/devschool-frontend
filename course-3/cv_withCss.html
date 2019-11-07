@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  <title>Document</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding: 0;
+
+    }
+
+    #avatar {
+      display: flex;
+      /* flex-OY */
+      align-items: center;
+      /*flex-OX  */
+      justify-content: center;
+      padding: 15px;
+    }
+
+    #avatar img {
+      height: 170px;
+      width: 170px;
+      border-radius: 50%;
+    }
+
+    #main-container {
+
+      display: flex;
+      flex-direction: row;
+      /* align-items: stretch; */
+    }
+
+
+    #right-container {
+
+      display: flex;
+      flex-direction: column;
+      flex: 3.5;
+      background: white;
+      
+
+    }
+
+    #left-container {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      
+    }
+
+    header {
+      background: rgb(96, 166, 184);
+      margin-left: 35px;
+      margin-right: 35px;
+      padding: 20px;
+      flex: 2.9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    /* avatar,personal-details,skills */
+    .left-item {
+
+      display: inline;
+      border: none;
+      background: rgb(186, 241, 241);
+      
+    }
+    /* work-exp,education,hobbies */
+    .right-item {
+
+      margin-left: 15px;
+      margin-right: 15px;
+      background: white;
+      flex: 1;
+
+    }
+
+    #work-experience {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #work-experience .job {
+      margin: 0;
+      background: white;
+      flex: 1;
+      padding-top: 10px;
+     
+    }
+
+    #work-experience .job-description {
+     
+      background: white;
+      flex: 2;
+      padding: 10px;
+    }
+
+
+
+    #wo-ed-ho-section {
+      display: flex;
+      flex: 10;
+      padding: 0.75rem;
+      margin: 0 0.25rem;
+      flex-direction: column;
+
+    }
+    #skill ul {
+
+      margin: 30px;
+      padding: 5px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    #skill ul li {
+      font-weight: bolder;
+      padding: 4px;
+      /* margin-top: 4px; */
+    }
+
+    #personal-info ul {
+      list-style: none;
+      padding: 10px;
+
+
+    }
+
+    #personal-info ul li {
+        padding: 5px;
+    }
+
+
+    #hobbies ul li {
+        padding: 5px;
+    }
+
+    #hobbies ul {
+      list-style: none;
+      padding: 10px;
+      font-size: 15px;
+    }
+
+    body {
+
+      font-family: 'Roboto', sans-serif;
+    }
+
+    i {
+      text-decoration: none;
+    }
+
+    /* TEXT */
+    .personal-skill-text {
+
+      padding-bottom: 10px;
+      margin: 10px;
+      background: white;
+    }
+
+    .text-education {
+      margin-top: 5px;
+      padding: 20px;
+    }
+
+    span {
+      font-weight: bold;
+      font-size: small;
+
+    }
+
+    h1 {
+
+      font-size: 55px;
+      color: white;
+    }
+
+    h3 {
+
+
+      color: black;
+      padding: 0.75rem;
+      margin: 0 0.25rem;
+      text-align: center;
+
+
+
+    }
+
+    .text-work-education {
+      /* padding: 10px; */
+
+      display: flex;
+      height: 40px;
+      margin-left: 15px;
+      margin-right: 15px;
+      background: rgb(96, 166, 184);
+
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <main id="main-container">
+
+
+
+    <section id="left-container">
+
+      <!-- left item 0 -->
+      <div id="avatar" class="left-item">
+        <img src="cv-img.png" alt="Photo"><br>
+      </div>
+
+      <!-- left item 1 -->
+      <div id="personal-info" class="left-item">
+
+
+        <h3 class="personal-skill-text">Personal Details</h3>
+
+        <ul>
+
+          <li><strong><i class="fas fa-file-signature"></i> Name:</strong>Bogdan Mitroiu</li>
+          <li><strong><i class="fas fa-birthday-cake"></i> Date of birth:</strong>18 Jul 1996</li>
+          <li><strong><i class="far fa-envelope"></i> Email:</strong><a
+              href="mailto:mitroiu.bogdan@gmail.com">mitroiu.bogdan@gmail.com</a></li>
+          <li><strong><i class="fas fa-phone"></i> Phone number:</strong><a href="tel:+40735517998">0735517998</a>
+          </li>
+          <li><strong><i class="fas fa-globe"></i> Website:</strong><a
+              href="https://github.com/MitroiuBogdan">https://github.com/MitroiuBogdan</a></li>
+
+        </ul>
+
+      </div>
+
+      </div>
+
+      <!-- left item 2 -->
+      <div id="skill" class="left-item">
+
+        <h3 class="personal-skill-text">Skills</h3>
+
+        <ul>
+          <li>Java</li>
+          <li>Spring</li>
+          <li>JavaScript</li>
+          <li>HTML5</li>
+          <li>RESTful Web Services</li>
+          <li>SQL</li>
+          <li>CSS</li>
+          <li>Maven</li>
+          <li>Git</li>
+          <li>Linux</li>
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <section id="right-container">
+
+      <!-- right-item 0 -->
+      <header>
+        <h1>Bogdan Mitroiu</h1>
+      </header>
+
+      <!-- right-item 1 -->
+      <section id="wo-ed-ho-section">
+
+        <h3 class="text-work-education"><i class="fas fa-briefcase"></i> Work Experience</h3>
+
+        <div id="work-experience" class="right-item">
+
+          <div class="job">
+
+            <h4>Job Title</h4><br>
+            <p>Trainee Software Developer for
+              Business Solution-Intrarom S.A</p>
+            <p><small><span>17/06/2019–17/09/2019</span></small></p>
+
+          </div>
+
+          <div class="job-description">
+            <p>
+
+
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, nihil cumque. Quae fugit nemo rem,
+              corrupti eaque cum dolor enim quo nobis odit aperiam provident assumenda dolorem velit minima
+              exercitationem!
+
+            </p>
+          </div>
+        </div>
+
+        <h3 class="text-work-education"><i class="fas fa-book-open"></i> Education</h3>
+
+        <!-- right-item 2 -->
+        <div id="education" class="right-item">
+
+          <p class="text-education"><span>25/09/2016–ongoing</span>:University of Politehnica
+            Bucharest:Electronics,Telecommunication,Computer Science</p>
+
+          <p class="text-education"><span>13/10/2019–ongoing:</span>ING-{Dev}School-Java & Web Components
+            Edition</p>
+        </div>
+
+        <h3 class="text-work-education"><i class="fas fa-table-tennis"></i> Hobbies</h3>
+
+        <!-- right-item 3 -->
+        <div id="hobbies" class="right-item">
+
+          <ul>
+            <li> Environmental/Character 3D Moddeling,Sculpting,Shading and Texturing</li>
+            <li> Digital Drawing</li>
+            <li>Fitness and Nutrition</li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+    </section>
+
+
+
+  </main>
+
+
+</body>
+
+
+
+</html>
