@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/style.css">
+    <title>CRONOMETER</title>
+  </head>
+  <body>
+ 
+
+    <nav>
+      <h1>CRONOMETER</h1>
+    </nav>
+    <main id="cronometer">
+      <section id="screen-section">
+        <div id="hour-div" class="screen-item">
+          <p class="screen-item-header">Hours</p>
+          <p id="count-hours">0</p>
+        </div>
+
+        <div id="min-div" class="screen-item">
+          <p class="screen-item-header">Minutes</p>
+          <p id="count-minutes">0</p>
+        </div>
+
+        <div id="sec-div" class="screen-item">
+          <p class="screen-item-header">Seconds</p>
+          <p id="count-seconds">0</p>
+        </div>
+
+        <div id="msec-div" class="screen-item">
+          <p class="screen-item-header">Milliseconds</p>
+          <p id="count-milliseconds">0</p>
+        </div>
+      </section>
+
+      <section id="btn-section">
+        <button id="start-btn" onclick="onStartClick()" class="btn">
+          Start
+        </button>
+        <button id="stop-btn" onclick="onStopClick()" class="btn">Stop</button>
+        <button id="reset-btn" onclick="onResetClick()" class="btn">
+          Reset
+        </button>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

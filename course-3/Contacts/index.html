@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <script type="module">
+      import { init } from "./index.js";
+      init();
+    </script>
+  </head>
+  <body>
+
+    
+    <!-- 
+
+
+
+
+      
+     -->
+    <h1>My Contacts</h1>
+
+    <form id="form-add">
+      <input type="text" required placeholder="name" />
+      <input type="text" required placeholder="email" />
+      <input type="text" required placeholder="phone" />
+      <button type="submit">Add new contact</button>
+    </form>
+
+    <form id="form-remove">
+      <ul id="list">
+        <li><input type="checkbox" />test</li>
+      </ul>
+      <button type="submit">Remove selected contact(s)</button>
+    </form>
+  </body>
+</html>
